@@ -182,6 +182,7 @@
       font-style: normal;
       color:black;
       text-align: justify;
+      line-height: 1.3;
   }
   .text_wrapper>p:last-child{
       margin-bottom: 0;

@@ -1,0 +1,201 @@
+:root { 
+    --black: #000000;
+    --cinnabar: #e2332a;
+    --eerie-black: #1e1e1e;
+    --green: #00ff38;
+    --mariner: #306cce;
+    --mist-gray: #c4c4c4;
+    --saffron: #fdbe30;
+    --tulip: #ff8585;
+    --white: #ffffff;
+  
+   
+    --font-size-l: 16px;
+    --font-size-m: 14px;
+    --font-size-s: 12px;
+    --font-size-xl: 18px;
+    --font-size-xs: 10px;
+    --font-size-xxl: 20px;
+    --font-size-xxxl: 30px;
+  
+   
+    --font-family-anonymous_pro: "Anonymous Pro", Helvetica;
+    --font-family-roboto: "Roboto", Helvetica;
+  
+}
+  .anonymouspro-normal-black-14px {
+    color: var(--black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-normal-eerie-black-18px {
+    color: var(--eerie-black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-normal-black-30px {
+    color: var(--black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xxxl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-normal-black-16px {
+    color: var(--black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-normal-eerie-black-20px {
+    color: var(--eerie-black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-bold-eerie-black-10px {
+    color: var(--eerie-black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .anonymouspro-bold-white-10px {
+    color: var(--white);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .anonymouspro-normal-eerie-black-14px {
+    color: var(--eerie-black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-normal-black-12px {
+    color: var(--black);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-s);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .anonymouspro-bold-tulip-10px {
+    color: var(--tulip);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xs);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .anonymouspro-bold-mariner-20px {
+    color: var(--mariner);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 700;
+  }
+  
+  .anonymouspro-normal-white-14px {
+    color: var(--white);
+    font-family: var(--font-family-anonymous_pro);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .border-1px-black {
+    border: 1px solid var(--black);
+  }
+  
+  .border-0-5px-mist-gray {
+    border: 0.5px solid var(--mist-gray);
+  }
+  
+  .border-1px-mariner {
+    border: 1px solid var(--mariner);
+  }
+  
+  
+.screen a {
+    display: contents;
+    text-decoration: none;
+  }
+  
+  .container-center-horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+  }
+  
+  .container-center-horizontal > * {
+    flex-shrink: 0;
+    pointer-events: auto;
+  }
+  
+  .overlay {
+    display: none;
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .overlay.animate-appear {
+    animation: reveal 0.3s ease-in-out 1 normal forwards;
+    display: block;
+    opacity: 0;
+  }
+  
+  .overlay.animate-disappear {
+    animation: reveal 0.3s ease-in-out 1 reverse forwards;
+    display: block;
+    opacity: 1;
+  }
+
+
+  .image_wrapper{
+      overflow: hidden;
+  }
+  .text_wrapper>p{
+      font-size: 16px;
+      font-weight: 600;
+      font-family: var(--font-family-anonymous_pro);
+      font-style: normal;
+      color:black;
+      text-align: justify;
+  }
+  .text_wrapper>p:last-child{
+      margin-bottom: 0;
+  }
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+  }
+  .fluid_img{
+    margin-bottom: 16px;
+  }
+  @media only screen and (min-width:768px) and (max-width:1199px) {
+    .fluid_img{
+      max-width: 50%;
+      margin: 0 30px 30px 15px;
+    }
+  }

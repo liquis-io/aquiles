@@ -1,0 +1,85 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Basic Css Start */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Basic Css End */
+
+/* Section Css Start */
+
+.image_block_wrapper{
+    padding: 50px 0px;
+}
+
+.image_block_wrapper .block_wrap{
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.image_block_wrapper .block_wrap .left_block{
+    max-width: 100%;
+}
+
+.image_block_wrapper .block_wrap .img_block{
+    width: 100%;    
+    padding: 0px 15px;
+}
+.image_block_wrapper .block_wrap .img_block img{
+    width: 100%;
+    max-width: 350px;
+    vertical-align: top;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.image_block_wrapper .block_wrap .block_content{
+    width: 100%;
+}
+
+.image_block_wrapper .block_wrap .block_content p{
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-family: inherit;
+}
+/* Section Css End */
+
+/* all Medai Quaries */
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (max-width: 576px){
+    .image_block_wrapper .block_wrap .img_block img{
+        max-width: 100%;
+        margin-bottom: 35px;
+        margin-right: 0px;
+    } 
+}
